@@ -8,7 +8,7 @@ export class User {
     }
 
     hasBook(book) {
-        throw new Error('Not implemented');
+    return this.books.includes(book);
     }
 
     return(book, library) {
