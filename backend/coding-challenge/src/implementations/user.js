@@ -4,7 +4,10 @@ export class User {
     }
 
     borrow(book, library) {
-        throw new Error('Not implemented');
+    if (library.books.includes(book)) {
+      library.removeBook(book);
+      this.books.push(book);
+    }
     }
 
     hasBook(book) {
