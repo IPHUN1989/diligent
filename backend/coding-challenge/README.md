@@ -28,3 +28,5 @@ The `User` class has the following methods:
 
 
 - `getBookNames()` - This method should return the list of names of the books the user has borrowed.
+
+### Solution by: Péter Illés
