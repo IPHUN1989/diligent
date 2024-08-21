@@ -16,6 +16,8 @@ export class User {
     }
 
     getBookNames() {
-        throw new Error('Not implemented');
+    const books = [];
+    this.books.map((book) => books.push(book.name));
+    return books;
     }
 }
