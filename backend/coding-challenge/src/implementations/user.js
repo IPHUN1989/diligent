@@ -12,7 +12,13 @@ export class User {
     }
 
     return(book, library) {
-        throw new Error('Not implemented');
+    if (this.books.includes(book)) {
+      library.addBook(book);
+      let index = this.books.indexOf(book);
+      this.books.splice(index, 1);
+      return true;
+    }
+    return false;
     }
 
     getBookNames() {
